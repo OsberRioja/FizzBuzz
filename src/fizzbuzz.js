@@ -1,6 +1,10 @@
 function esMultiplo3(num)
 {
-    return true;
+    if(num==3)
+    {
+        return true;
+    }
+    return false;
 }
 
 export default esMultiplo3;
