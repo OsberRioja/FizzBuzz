@@ -1,6 +1,6 @@
 function esMultiplo3(num)
 {
-    if(num==3)
+    if(num % 3==0)
     {
         return true;
     }

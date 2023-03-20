@@ -7,5 +7,8 @@ describe("fizzbuzz", () => {
   it("si el numero es 5 no es considerado multiplo de 3", () => {
     expect(esMultiplo3(5)).toEqual(false);
   });
+  it("si el numero es divisible entre 3 es considerado multiplo de 3", () => {
+    expect(esMultiplo3(30)).toEqual(true);
+  });
 });
 
