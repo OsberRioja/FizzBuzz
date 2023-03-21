@@ -1,17 +1,21 @@
-import esMultiplo3 from "./fizzbuzz.js";
+import esMultiplo from "./fizzbuzz.js";
 
 describe("fizzbuzz", () => {
   it("si el numero es 3 es considerado multiplo de 3", () => {
-    expect(esMultiplo3(3)).toEqual(true);
+    expect(esMultiplo(3)).toEqual('Fizz');
   });
-  it("si el numero es 5 no es considerado multiplo de 3", () => {
-    expect(esMultiplo3(5)).toEqual(false);
+  it("si el numero es 5 es considerado multiplo de 5", () => {
+    expect(esMultiplo(5)).toEqual('Buzz');
   });
   it("si el numero es divisible entre 3 es considerado multiplo de 3", () => {
-    expect(esMultiplo3(30)).toEqual(true);
+    expect(esMultiplo(9)).toEqual('Fizz');
   });
   it("si el numero no es divisible entre 3 no es considerado multiplo de 3", () => {
-    expect(esMultiplo3(1)).toEqual(false);
+    expect(esMultiplo(1)).toEqual(1);
+  });
+
+  it("si el numero es multiplo de 5 y de 3 es considerado multiplo", () => {
+    expect(esMultiplo(30)).toEqual('FizzBuzz');
   });
 });
 

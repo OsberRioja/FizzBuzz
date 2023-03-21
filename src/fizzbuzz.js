@@ -1,10 +1,22 @@
-function esMultiplo3(num)
+function esMultiplo(num)
 {
+   if(num%3==0 && num%5==0)
+   {
+    return 'FizzBuzz';
+   }
+   else
+   {
     if(num % 3==0)
     {
-        return true;
+        return 'Fizz';
     }
-    return false;
+    if(num % 5==0)
+    {
+        return 'Buzz';
+    }
+   }
+   return num;
 }
 
-export default esMultiplo3;
+
+export default esMultiplo;
