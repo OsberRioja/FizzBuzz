@@ -1,13 +1,20 @@
 <html>
-  <body>
-    <h1>FizzBuzz</h1>
+  <style>
+    .interfaz{
+      background-color: rgb(43, 43, 43);
+      text-align: center;
+    }
+
+  </style>
+  <body class="Interfaz">
+    <h1 style="color: chartreuse;">FizzBuzz</h1>
     <form id="FizzBuzz-form">
-      <label for="primer-numero">Numero:</label>
+      <label style="color: chartreuse;" for="primer-numero">Limite:</label>
       <input type="number" id="primer-numero" />
       <input type="submit" value="Aceptar" id="Aceptar-button" />
      
     </form>
-    <div id="resultado-div"></div>
+    <div style="color: chartreuse;" id="resultado-div"></div>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
